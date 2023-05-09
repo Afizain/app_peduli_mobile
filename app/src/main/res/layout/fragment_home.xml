@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DABF5"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="32dp"
+       android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peduli"
+        android:textColor="@color/white"
+        android:textSize="48dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnBuatLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Buat Laporan" />
+
+    <Button
+        android:id="@+id/btnStatusLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Cek Status Laporan" />
+
+</LinearLayout>
+
+       <Button
+           android:id="@+id/btnInformationEvent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:text="Informasi Kegiatan" />
+
+
+   </LinearLayout>
+</RelativeLayout>

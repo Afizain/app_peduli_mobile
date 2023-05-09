@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DABF5"
+    tools:context=".fragment.BuatAduanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="Peduli"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Ajukan Keluhan Anda"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Buat Laporan"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Tulis Keluhan Anda"
+                    android:inputType="textMultiLine"
+                    android:padding="15dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Upload foto (opsional)"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="188dp"
+                        android:layout_height="45dp"/>
+                    <RelativeLayout
+                        android:layout_width="20dp"
+                        android:layout_height="45dp"/>
+
+                    <Button
+                        android:layout_width="108dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:text="Upload Foto"
+                        android:textAllCaps="false"
+                        android:background="@color/purple_500"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"/>
+
+                <Button
+                    android:layout_marginLeft="240dp"
+                    android:text="Login"
+                    android:layout_width="131dp"
+                    android:layout_height="50dp"
+                    android:background="@color/purple_500"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+
+
+
+
+
+</RelativeLayout>

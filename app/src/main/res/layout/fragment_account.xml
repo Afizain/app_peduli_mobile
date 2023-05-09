@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    tools:context=".fragment.AccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--Content-->
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="32dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnLogout"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logout"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:src="@drawable/person"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/circular"
+                        app:strokeColor="#E9E9E9"
+                        app:strokeWidth="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/unggah"
+                        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <!--    Nama Lengkap-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama lengkap"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_nama"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <!--    Nama Perumahan-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Perumahan"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_nama_perum"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <!--    Nama Desa-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desa"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_desa"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <!--    Kecamatan-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kecamatan"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_kecamatan"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <!--    Kabupaten/kota-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kabupaten/kota"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_kota"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <!--    Provinsi-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Provinsi"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_provinsi"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Update Data"
+                    android:textAllCaps="false"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
