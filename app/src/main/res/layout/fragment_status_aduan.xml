@@ -17,17 +17,41 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Status Laporan"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:textSize="24dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peduli"
+                android:textColor="@color/white"
+                android:textSize="48dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajukan keluhan anda terkait fasilitas publik"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="normal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Laporan"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
         </LinearLayout>
     </RelativeLayout>
     <LinearLayout
@@ -45,7 +69,36 @@
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="800dp"/>
+                    android:layout_height="wrap_content">
+
+                   <com.google.android.material.tabs.TabLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/tab_layout">
+
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Waiting"/>
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="In Progress"/>
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Complete"/>
+                   </com.google.android.material.tabs.TabLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/view_pagerr"/>
+                </RelativeLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

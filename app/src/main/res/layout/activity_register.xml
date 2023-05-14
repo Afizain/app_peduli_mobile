@@ -9,7 +9,7 @@
     <ImageView
         android:layout_marginTop="74dp"
         android:layout_marginLeft="25dp"
-        android:id="@+id/back"
+        android:id="@+id/Register_backTbl"
         android:layout_width="52dp"
         android:layout_height="44dp"
         android:src="@drawable/baseline_arrow_back_ios_24" />
@@ -26,7 +26,7 @@
             android:layout_marginTop="185dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create New Account"/>
+            android:text="Buat Akun Baru"/>
         <TextView
             android:layout_marginTop="10dp"
             android:layout_marginBottom="40dp"
@@ -38,50 +38,50 @@
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username"/>
+            android:text="Nama Pengguna"/>
 
         <EditText
-            android:hint="ExampleName"
+            android:hint="Masukkan Nama Pengguna"
             android:textSize="14dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username_txt"
+            android:id="@+id/Register_usernameTxt"
             />
 
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"/>
+            android:text="Kata Sandi"/>
 
         <EditText
             android:inputType="textPassword"
             android:textSize="14dp"
-            android:hint="Create password"
+            android:hint="Buat Kata sandi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password_txt"
+            android:id="@+id/Register_passwordTxt"
             />
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email Address"/>
+            android:text="Alamat Email"/>
 
         <EditText
             android:inputType="textEmailAddress"
             android:textSize="14dp"
-            android:hint="Enter your email address"
+            android:hint="Masukkan Alamat Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/emailAddress_txt"
+            android:id="@+id/Register_emailAddressTxt"
             />
         <Button
-            android:id="@+id/btn_signup"
+            android:id="@+id/Register_signupTbl"
             android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up!"
+            android:text="Daftar!"
             android:textAllCaps="false"/>
 
 

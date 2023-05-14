@@ -3,54 +3,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4DABF5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:background="#4DABF5">
+
+    </RelativeLayout>
 
    <LinearLayout
+       android:layout_margin="20dp"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:layout_marginTop="32dp"
        android:orientation="vertical">
 
+
     <TextView
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Peduli"
         android:textColor="@color/white"
-        android:textSize="48dp"/>
+        android:textSize="48dp"
+        android:textStyle="bold"/>
+
+       <TextView
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Ajukan keluhan anda terkait fasilitas publik"
+           android:textColor="@color/white"
+           android:textSize="16dp"
+           android:textStyle="normal"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="20dp"/>
+       <TextView
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Berita/Pengumuman"
+           android:textColor="@color/white"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:layout_marginBottom="5dp"/>
+       
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="12dp">
+
+           <com.denzcoskun.imageslider.ImageSlider
+               android:id="@+id/image_slider"
+               android:layout_width="wrap_content"
+               android:layout_height="200dp"
+               app:iss_auto_cycle="true"
+               app:iss_period="1000"
+               app:iss_delay="1000"
+               app:iss_text_align="center"/>
+
+       </androidx.cardview.widget.CardView>
+       
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <Button
-        android:id="@+id/btnBuatLaporan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:id="@+id/Homefragment_buatLaporanTbl"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="30dp"
+        android:background="@color/white"
         android:text="Buat Laporan" />
 
     <Button
-        android:id="@+id/btnStatusLaporan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:id="@+id/Homefragment_statusLaporanTbl"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:text="Cek Status Laporan" />
-
+        android:background="@color/white"
+        android:text="Status laporan" />
 </LinearLayout>
 
        <Button
            android:id="@+id/btnInformationEvent"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_marginLeft="30dp"
+           android:layout_width="175dp"
+           android:layout_height="60dp"
            android:layout_marginTop="20dp"
+           android:background="@color/white"
            android:text="Informasi Kegiatan" />
 
 
