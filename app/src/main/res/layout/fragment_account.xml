@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/shapeableImageView2"
+                        android:id="@+id/profile_viewFoto"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:background="@color/white"
@@ -71,11 +71,16 @@
                         app:strokeWidth="5dp" />
 
                     <ImageView
+                        android:id="@+id/profile_pilihFoto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
                         android:src="@drawable/unggah"
-                        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintEnd_toEndOf="@+id/profile_viewFoto"
+                        app:layout_constraintTop_toTopOf="@+id/profile_viewFoto" />
+
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <RelativeLayout
@@ -91,6 +96,25 @@
                     android:layout_height="10dp"/>
                 <EditText
                     android:id="@+id/profile_nama"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_height="45dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_input"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <!--    Nomor Telpon-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No. Telp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/profile_noTelp"
                     android:layout_width="match_parent"
                     android:paddingStart="12dp"
                     android:paddingEnd="12dp"
@@ -116,9 +140,56 @@
                     android:layout_height="45dp"
                     android:drawablePadding="12dp"
                     android:background="@drawable/custom_input"/>
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="10dp"/>
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rt"/>
+                    <RelativeLayout
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rw"/>
+
+                </LinearLayout>
+
+<!--                RT/RW-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/profile_Rt"
+                        android:layout_width="100dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:layout_height="45dp"
+                        android:drawablePadding="12dp"
+                        android:background="@drawable/custom_input"/>
+
+                    <RelativeLayout
+                        android:layout_width="10dp"
+                        android:layout_height="45dp"/>
+
+                    <EditText
+                        android:id="@+id/profile_Rw"
+                        android:layout_width="100dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:layout_height="45dp"
+                        android:drawablePadding="12dp"
+                        android:background="@drawable/custom_input"/>
+
+
+                </LinearLayout>
 
                 <!--    Nama Desa-->
                 <TextView
@@ -196,11 +267,36 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
-                <Button
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Update Data"
-                    android:textAllCaps="false"/>
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/profile_createData"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:text="Tambah Data"
+                        android:textAllCaps="false"
+                        android:background="@drawable/custom_button"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"/>
+                    <RelativeLayout
+                        android:layout_width="10dp"
+                        android:layout_height="50dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/profile_updateData"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:text="Update Data"
+                        android:textAllCaps="false"
+                        android:background="@drawable/custom_button2"
+                        android:textColor="#4DABF5"
+                        android:textSize="14dp"/>
+
+
+                </LinearLayout>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp"/>

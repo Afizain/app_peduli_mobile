@@ -24,20 +24,29 @@
 
         <TextView
             android:layout_marginTop="185dp"
-            android:layout_width="wrap_content"
+            android:layout_width="231dp"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang Kembali"/>
+            android:textSize="48dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Selamat Datang"/>
         <TextView
             android:layout_marginTop="10dp"
             android:layout_marginBottom="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#4DABF5"
             android:text="Pengaduan Masyarakat"/>
 
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#CCC1C1"
             android:text="Nama Pengguna"/>
 
         <EditText
@@ -45,6 +54,9 @@
             android:textSize="14dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColorHint="#CCC1C1"
+            android:textColor="@color/black"
             android:id="@+id/Login_usernameTxt"
             />
 
@@ -52,23 +64,40 @@
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#CCC1C1"
             android:text="Kata Sandi"/>
 
+
         <EditText
-            android:inputType="textPassword"
             android:textSize="14dp"
             android:hint="Masukkan kata sandi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColorHint="#CCC1C1"
+            android:textColor="@color/black"
             android:id="@+id/Login_passwordTxt"
-            android:ems="10" />
-        <Button
+            android:ems="10"/>
+        <CheckBox
+            android:id="@+id/Login_showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hide password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Login_signinTbl"
-            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Masuk!"
-            android:textAllCaps="false"/>
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="14dp"/>
 
 
 

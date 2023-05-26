@@ -29,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     Button btnSignup;
     EditText ed_username, ed_password,ed_email;
     String str_username,str_password,str_email,str_status;
-    String url = "http://192.168.0.124:80/api/register";
+    String url = constant.Home+"register";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

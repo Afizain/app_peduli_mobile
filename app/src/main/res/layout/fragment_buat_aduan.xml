@@ -3,111 +3,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4DABF5"
+    android:background="@color/white"
     tools:context=".fragment.BuatAduanFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:background="#4DABF5">
+            </RelativeLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peduli"
+            android:textColor="@color/white"
+            android:textSize="48dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajukan keluhan anda terkait fasilitas publik"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat pengaduan"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/BuatAduan_keluhanTxt"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Tulis Keluhan Anda"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="20dp"
-                android:orientation="vertical">
+            android:orientation="horizontal">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"/>
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="45dp">
 
-                <TextView
+                <View
+                    android:id="@+id/view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="30sp"
-                    android:text="Peduli"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="Ajukan Keluhan Anda"/>
+                    android:background="@color/cardview_dark_background" />
+            </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="Buat Laporan"/>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"/>
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="45dp" />
 
-                <EditText
-                    android:id="@+id/editTextTextMultiLine"
-                    android:layout_width="match_parent"
-                    android:layout_height="245dp"
-                    android:background="@drawable/custom_input"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="Tulis Keluhan Anda"
-                    android:inputType="textMultiLine"
-                    android:padding="15dp" />
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="Upload foto (opsional)"/>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="188dp"
-                        android:layout_height="45dp"/>
-                    <RelativeLayout
-                        android:layout_width="20dp"
-                        android:layout_height="45dp"/>
-
-                    <Button
-                        android:layout_width="108dp"
-                        android:layout_height="45dp"
-                        android:padding="8dp"
-                        android:text="Upload Foto"
-                        android:textAllCaps="false"
-                        android:background="@color/purple_500"
-                        android:textSize="14dp" />
-                </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"/>
-
-                <Button
-                    android:layout_marginLeft="240dp"
-                    android:text="Login"
-                    android:layout_width="131dp"
-                    android:layout_height="50dp"
-                    android:background="@color/purple_500"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="108dp"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_button2"
+                android:padding="8dp"
+                android:text="Upload Foto"
+                android:textAllCaps="false"
+                android:textColor="#4DABF5"
+                android:textSize="14dp" />
         </LinearLayout>
-    </ScrollView>
-    
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
 
-
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BuatAduan_submitBtn"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/custom_button"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -1,7 +1,11 @@
 package com.example.project_sem4.fragment;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -20,17 +24,20 @@ import java.util.ArrayList;
 
 
 public class HomeFragment extends Fragment {
-    Button btn_buatlaporan, btn_statuslaporan, btn_informasikegiatan;
+    AppCompatButton btn_buatlaporan, btn_statuslaporan, btn_informasikegiatan;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
         btn_buatlaporan = view.findViewById(R.id.Homefragment_buatLaporanTbl);
         btn_statuslaporan = view.findViewById(R.id.Homefragment_statusLaporanTbl);
-        btn_informasikegiatan = view.findViewById(R.id.btnInformationEvent);
+        btn_informasikegiatan = view.findViewById(R.id.Homefragment_tanggapanPengaduanTbl);
 
 
+
+// intent fragment
         btn_buatlaporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +46,7 @@ public class HomeFragment extends Fragment {
                 fr.commit();
 //                Intent intent = new Intent(getActivity(), LoginActivity.class);
 //                startActivity(intent);
+
             }
         });
         btn_statuslaporan.setOnClickListener(new View.OnClickListener() {
@@ -68,14 +76,8 @@ public class HomeFragment extends Fragment {
         ImageSlider imageSlider = view.findViewById(R.id.image_slider);
         imageSlider.setImageList(imageList);
 
-
-
         return view;
 
-
-
-
     }
-
 
 }

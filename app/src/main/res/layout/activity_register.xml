@@ -24,20 +24,29 @@
 
         <TextView
             android:layout_marginTop="185dp"
-            android:layout_width="wrap_content"
+            android:layout_width="231dp"
             android:layout_height="wrap_content"
-            android:text="Buat Akun Baru"/>
+            android:textSize="48dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Buat akun baru"/>
         <TextView
             android:layout_marginTop="10dp"
             android:layout_marginBottom="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#4DABF5"
             android:text="Pengaduan Masyarakat"/>
 
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#CCC1C1"
             android:text="Nama Pengguna"/>
 
         <EditText
@@ -46,12 +55,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Register_usernameTxt"
-            />
+            android:textStyle="normal"
+            android:textColorHint="#CCC1C1"
+            android:textColor="@color/black" />
 
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#CCC1C1"
             android:text="Kata Sandi"/>
 
         <EditText
@@ -60,12 +74,18 @@
             android:hint="Buat Kata sandi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColorHint="#CCC1C1"
+            android:textColor="@color/black"
             android:id="@+id/Register_passwordTxt"
             />
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#CCC1C1"
             android:text="Alamat Email"/>
 
         <EditText
@@ -74,15 +94,22 @@
             android:hint="Masukkan Alamat Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColorHint="#CCC1C1"
+            android:textColor="@color/black"
             android:id="@+id/Register_emailAddressTxt"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Register_signupTbl"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Daftar!"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:textSize="14dp"
+            />
 
 
     </LinearLayout>
